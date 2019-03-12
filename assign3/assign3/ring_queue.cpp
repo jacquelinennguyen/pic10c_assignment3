@@ -172,8 +172,8 @@ public:
 	}
 
 	void pop_front() {
-		if (begin_index >= MAX_SIZE-1)
-
+		if (begin_index >= MAX_SIZE - 1)
+			begin_index == 0; //not sure what to do in this if statement yet
 		begin_index++;
 		if (ring_size == 0) 
 			return;
@@ -185,12 +185,12 @@ public:
 	// Functions that return iterators
 	iterator begin() {
 		// Replace the line(s) below with your code.
-		return iterator(this, 0);
+		return iterator(this, begin_index);
 	}
 
 	iterator end() {
 		// Replace the line(s) below with your code.
-		return iterator(this, 0);
+		return iterator(this, end_index());
 	}
 
 
