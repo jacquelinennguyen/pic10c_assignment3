@@ -79,7 +79,7 @@ public:
 
 		bool operator!=(const iterator& rhs) const {
 			// Replace the line(s) below with your code.
-			return true;
+			return !(rhs == this);
 		}
 
 	}; // end of iterator class
@@ -199,7 +199,7 @@ public:
 	// Miscellaneous functions
 	size_t size() const {
 		// Replace the line(s) below with your code.
-		return 0;
+		return ring_size;
 	}
 
 	// Debugging functions
