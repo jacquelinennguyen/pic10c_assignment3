@@ -57,16 +57,17 @@ public:
 	public:
 		reference operator*() {
 			// Replace the line(s) below with your code.
-			return parent->buffer[0];
+			return parent->buffer[offset];
 		}
 
 		iterator& operator++() {
 			// Replace the line(s) below with your code.
+			offset++;
 			return *this;
 		}
 
-		iterator operator++(int unused) {
-			// Replace the line(s) below with your code.
+		iterator operator++(int unused) {your code.
+			// Replace the line(s) below with 
 			return *this;
 		}
 
@@ -185,12 +186,12 @@ public:
 	// Functions that return iterators
 	iterator begin() {
 		// Replace the line(s) below with your code.
-		return iterator(this, begin_index);
+		return iterator(this, 0);
 	}
 
 	iterator end() {
 		// Replace the line(s) below with your code.
-		return iterator(this, end_index());
+		return iterator(this, ring_size);
 	}
 
 
