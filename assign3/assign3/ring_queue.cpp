@@ -211,10 +211,7 @@ public:
 
 };
 
-
-
-
-int main1() {
+int main() {
 	RingQueue<int, 7> rq;
 	rq.dump_queue();
 
