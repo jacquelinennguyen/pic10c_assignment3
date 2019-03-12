@@ -55,9 +55,10 @@ public:
 
 
 	public:
+
 		reference operator*() {
 			// Replace the line(s) below with your code.
-			return parent->buffer[offset];
+			return parent->buffer[0];
 		}
 
 		iterator& operator++() {
@@ -110,16 +111,16 @@ public:
 	friend class iterator;
 	// friend class const_iterator;  // not implemented... try it if you want.
 
-
+	// The starting index. It changes according to a very specific set of rules
+	// (below).
+	int begin_index;
 
 private:
 	// A fixed-size static array with constant capacity that represents the
 	// RingQueue
 	ItemType buffer[MAX_SIZE];
 
-	// The starting index. It changes according to a very specific set of rules
-	// (below).
-	int begin_index;
+	
 
 	
 
