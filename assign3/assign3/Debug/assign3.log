@@ -1,0 +1,14 @@
+﻿  ring_queue.cpp
+c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(164): error C3867: 'RingQueue<int,7>::end_index': non-standard syntax; use '&' to create a pointer to member
+  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(163): note: while compiling class template member function 'void RingQueue<int,7>::push_back(const ItemType &)'
+          with
+          [
+              ItemType=int
+          ]
+  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(217): note: see reference to function template instantiation 'void RingQueue<int,7>::push_back(const ItemType &)' being compiled
+          with
+          [
+              ItemType=int
+          ]
+  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(213): note: see reference to class template instantiation 'RingQueue<int,7>' being compiled
+c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(164): error C2107: illegal index, indirection not allowed
