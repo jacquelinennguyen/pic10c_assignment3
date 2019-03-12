@@ -66,14 +66,15 @@ public:
 			return *this;
 		}
 
-		iterator operator++(int unused) {your code.
-			// Replace the line(s) below with 
+		iterator operator++(int unused) {
+			// Replace the line(s) below with your code.
+			offset++; // idk what this is
 			return *this;
 		}
 
 		bool operator==(const iterator& rhs) const {
 			// Replace the line(s) below with your code.
-			return true;
+			return rhs.parent == this->parent || rhs.offset == this->offset;
 		}
 
 		bool operator!=(const iterator& rhs) const {
