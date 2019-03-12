@@ -154,7 +154,7 @@ public:
 
 
 		// Replace the line(s) below with your code.
-		return buffer[0];
+		return buffer[end_index()];
 	}
 
 
@@ -163,7 +163,7 @@ public:
 	void push_back(const ItemType& value) {	
 		buffer[end_index()] = value;
 		ring_size++;
-		if (ring_size >= MAX_SIZE) {
+		if (ring_size > MAX_SIZE) {
 			ring_size = MAX_SIZE;
 			begin_index++;
 		}
