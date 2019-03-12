@@ -59,7 +59,7 @@ public:
 
 		reference operator*() {
 			// Replace the line(s) below with your code.
-			return parent->buffer[(parent->begin_index + offset) % parent->ring_size];
+			return parent->buffer[(parent->begin_index + offset) % MAX_SIZE];
 		}
 
 		iterator& operator++() {
@@ -70,7 +70,7 @@ public:
 
 		iterator operator++(int unused) {
 			// Replace the line(s) below with your code.
-			offset++; // idk what this is
+			++offset; // idk what this is
 			return *this;
 		}
 
