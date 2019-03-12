@@ -55,10 +55,11 @@ public:
 
 
 	public:
+		//int start = parent->begin_index;
 
 		reference operator*() {
 			// Replace the line(s) below with your code.
-			return parent->buffer[0];
+			return parent->buffer[(parent->begin_index + offset) % parent->ring_size];
 		}
 
 		iterator& operator++() {

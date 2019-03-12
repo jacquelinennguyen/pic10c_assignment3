@@ -1,6 +1,6 @@
 ﻿  ring_queue.cpp
-c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(179): warning C4553: '==': result of expression not used; did you intend '='?
-  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(177): note: while compiling class template member function 'void RingQueue<int,7>::pop_front(void)'
-  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(225): note: see reference to function template instantiation 'void RingQueue<int,7>::pop_front(void)' being compiled
-  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(218): note: see reference to class template instantiation 'RingQueue<int,7>' being compiled
+c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(180): warning C4553: '==': result of expression not used; did you intend '='?
+  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(178): note: while compiling class template member function 'void RingQueue<int,7>::pop_front(void)'
+  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(226): note: see reference to function template instantiation 'void RingQueue<int,7>::pop_front(void)' being compiled
+  c:\users\beuyenj\documents\le college\pic10c\assign3\pic10c_assignment3\assign3\assign3\ring_queue.cpp(219): note: see reference to class template instantiation 'RingQueue<int,7>' being compiled
   assign3.vcxproj -> C:\Users\beuyenj\Documents\le college\PIC10C\assign3\pic10c_assignment3\assign3\Debug\assign3.exe
