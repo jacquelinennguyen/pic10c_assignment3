@@ -119,6 +119,8 @@ class RingQueue{
     // (below).
     int begin_index;
 
+	int end_index;
+
     // The actual size of the RingQueue. Not to be confused with its capacity.
     int ring_size;
 
@@ -127,7 +129,7 @@ class RingQueue{
     // A helper function that computes the index of 'the end' of the RingQueue
     int end_index() const {
         // Replace the line(s) below with your code.
-        return begin_index;
+        return (begin_index+ring_size) % MAX_SIZE;
     }
 
 
