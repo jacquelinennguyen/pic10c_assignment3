@@ -70,7 +70,7 @@ public:
 
 		iterator operator++(int unused) {
 			// Replace the line(s) below with your code.
-			++offset; // idk what this is
+			offset+=unused; // idk what this is
 			return *this;
 		}
 
@@ -158,7 +158,7 @@ public:
 
 
 		// Replace the line(s) below with your code.
-		return buffer[end_index()];
+		return buffer[end_index()-1];
 	}
 
 
@@ -177,7 +177,7 @@ public:
 
 	void pop_front() {
 		if (begin_index >= MAX_SIZE - 1)
-			begin_index == 0; //not sure what to do in this if statement yet
+			begin_index = 0; 
 		begin_index++;
 		if (ring_size == 0) 
 			return;
