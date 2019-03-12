@@ -161,7 +161,7 @@ public:
 
 	// Mutators
 	void push_back(const ItemType& value) {	
-		buffer[end_index] = value;
+		buffer[end_index()] = value;
 		ring_size++;
 		if (ring_size >= MAX_SIZE) {
 			ring_size = MAX_SIZE;
@@ -172,7 +172,12 @@ public:
 	}
 
 	void pop_front() {
+		if (begin_index >= MAX_SIZE-1)
+
 		begin_index++;
+		if (ring_size == 0) 
+			return;
+		ring_size--;
 		return;
 	}
 
@@ -209,7 +214,7 @@ public:
 
 
 
-int main() {
+int main1() {
 	RingQueue<int, 7> rq;
 	rq.dump_queue();
 
