@@ -62,16 +62,17 @@ public:
 			return parent->buffer[(parent->begin_index + offset) % MAX_SIZE];
 		}
 
-		iterator& operator++() {
+		iterator& operator++() {//prefix
 			// Replace the line(s) below with your code.
 			offset++;
 			return *this;
 		}
 
-		iterator operator++(int unused) {
+		iterator operator++(int unused) {//postfix
 			// Replace the line(s) below with your code.
-			offset++; // idk what this is
-			return *this;
+			iterator iter(parent, offset);
+			offset++; // idk what this is. i know now.
+			return iter;
 		}
 
 		bool operator==(const iterator& rhs) const {
